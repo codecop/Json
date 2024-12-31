@@ -267,23 +267,3 @@ JsonParser := Object clone do (
 
 Sequence parseJson := method(JsonParser clone setBuffer(self) parseJson)
 File parseJson := method(asBuffer parseJson)
-
-#x := Object clone
-#x a := 1
-#x b := 2
-#x list := list(1,2,3,4)
-#x t := true
-#x f := false
-#x n := nil
-#x s := "seq"
-#x o := Object clone do( x := 13; y := 19 )
-#x m := Map clone atPut("x", 13) atPut("y", 19)
-#x mut := "\"" asMutable
-#x hex := 19 asCharacter # Doesn't work as the character is stripped out becuase Io doesn't support escaping.
-#x jobj := JsonObject clone addSlot("setSlot", 13) addSlot("addSlot", "hehe")
-#
-#json := x asJson
-#writeln(json)
-#
-#y := json parseJson
-#writeln(y asJson)
