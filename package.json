@@ -1,0 +1,14 @@
+{
+  "name": "Json",
+  "version": "0.1.0",
+  "description": "A simple json pack/unpack for Io.",
+  "author": "Jonathan Wright",
+  "readme": "README.md",
+  "protos": [ "JsonParser", "JsonObject"],
+  "dependencies": {
+    "libs": [],
+    "headers": [],
+    "protos": [],
+    "packages": []
+  }
+}
