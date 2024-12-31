@@ -1,3 +1,5 @@
+Json := "A simple json pack/unpack for Io"
+
 true asJson := method(buffer,
     buffer ifNilEval(Sequence clone) appendSeq("true")
 )
